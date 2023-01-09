@@ -1,0 +1,463 @@
+@media (min-width: 600px) and (max-width: 1023px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+
+  /* MAIN COLOR:#199cdb
+     GREY COLOR: #868e96
+   */
+
+  /**************baner***************/
+
+  .gfg {
+    height: 100vh;
+    width: 100%;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  }
+  header h1,
+  header p {
+    position: relative;
+
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  header h1:hover {
+    background: -webkit-linear-gradient(#199cdb, #199cdb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .text-banner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 20em;
+    transform: translate(-50%, -50%);
+    color: #fff;
+  }
+  /**************nabar***************/
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+
+  nav a {
+    color: #868e96;
+    text-decoration: none;
+    text-align: center;
+    padding: 1em 1em;
+    font-size: 1.5em;
+
+    display: flex;
+    gap: 0.25em;
+
+    border-left: 1px solid #199cdb;
+    border-collapse: collapse;
+  }
+
+  nav a:hover {
+    color: #199cdb;
+  }
+
+  .nav-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #199cdb;
+  }
+
+  .nav-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #199cdb;
+  }
+
+  .My-img img {
+    display: none;
+    /*width: 12.5em;
+      height: 12.5em;
+  
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      top: 46em;
+      transform: translate(-50%, -25%);
+      border: 10px solid #f1f3f5;*/
+  }
+  /**************thông tin cá nhân***************/
+
+  .Personal-information {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .Personal-information .goal,
+  .Personal-information .info {
+    padding-top: 5em;
+  }
+  .goal {
+    padding: 5em 3em 0em 3em;
+    background-color: #ced4da;
+  }
+  .Personal-information h1 {
+    margin-bottom: 1.25em;
+    font-size: 2em;
+    line-height: 1.1;
+    letter-spacing: -1px;
+  }
+
+  .goal p {
+    margin-bottom: 1.5em;
+    font-size: 0.8em;
+    line-height: 1.7;
+    color: #868e96;
+  }
+  .info {
+    padding: 2em 0em 0em 3em;
+    background-color: #dee2e6;
+    padding-top: 8em;
+  }
+  .info p {
+    margin-bottom: 0.8em;
+    font-size: smaller;
+  }
+  .info p .bold {
+    font-weight: bold;
+    display: inline-block;
+    width: 6em;
+    color: black;
+  }
+
+  .App {
+    margin-top: 2em;
+    margin-bottom: 3em;
+    display: flex;
+    flex-direction: row;
+    gap: 0.875em;
+    align-items: center;
+  }
+  .App i {
+    color: #228be6;
+  }
+
+  /**************Job***************/
+  /*SPACING SYSTEM (px) 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+  FONT SIZE SYSTEM (px) 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62
+  / 74 / 86 / 98 */
+  .container {
+    display: grid;
+    width: 73.125em;
+    margin: 4em auto;
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-template-areas:
+      "Experiment Skill"
+      " Language Active "
+      "Education Hobbies";
+
+    gap: 1.5em;
+  }
+
+  .item {
+    border: 1px solid #ced4da;
+    min-height: 3.125em;
+    padding: 0.8333em;
+    font-size: 1em;
+  }
+
+  .Experiment {
+    grid-area: Experiment;
+  }
+  .title-job {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 0 2.75em 0;
+  }
+  .title-job p {
+    font-weight: 400;
+    font-size: 1.875em;
+  }
+  section .container .title-job i {
+    font-size: 1.25em;
+
+    color: #adb5bd;
+    margin-right: 2em;
+  }
+  .time {
+    margin-left: 1.5em;
+    color: #868e96;
+    font-size: 0.75em;
+    line-height: 1.7;
+    color: #868e96;
+  }
+  .border {
+    display: inline-block;
+    margin: 0.25em;
+    padding: 0.25em 0.375em;
+    border-radius: 0.75em;
+    background-color: #199cdb;
+    color: #fff;
+  }
+  ul {
+    list-style: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1.5em;
+    color: #868e96;
+    font-size: 0.75em;
+    line-height: 1.7;
+  }
+  li {
+    margin-bottom: 0.5em;
+    line-height: 1.5;
+  }
+  .Experiment .project {
+    margin: 24px;
+  }
+
+  .Skill {
+    grid-area: Skill;
+  }
+  .blue {
+    background: #199cdb;
+    display: inline-block;
+    height: 0.125em;
+    margin-right: 0.625em;
+    width: 2.8125em;
+  }
+  .grey {
+    background: #f1f3f5;
+    display: inline-block;
+    height: 0.125em;
+    margin-right: 0.625em;
+    width: 2.8125em;
+  }
+  .elememt .s {
+    margin-bottom: 2em;
+  }
+
+  .Language {
+    grid-area: Language;
+  }
+  .Active {
+    grid-area: Active;
+  }
+  .Education {
+    grid-area: Education;
+  }
+
+  .Hobbies {
+    grid-area: Hobbies;
+  }
+  .Hobbies .favor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .Hobbies .favor p {
+    display: flex;
+    flex-direction: column;
+    color: #868e96;
+    font-size: 1em;
+  }
+  .Hobbies .favor i {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 2em;
+    height: 2em;
+
+    color: #199cdb;
+    border-radius: 50%;
+    border: #199cdb 1px solid;
+  }
+
+  /**************Chứng chỉ và giải thưởng***************/
+
+  section h1 {
+    padding: 3em 0 0 3em;
+  }
+
+  .container-1 {
+    display: grid;
+
+    margin: 2px auto;
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-template-areas: "c-1 c-2";
+  }
+  .Certificate {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2em;
+
+    padding: 1.5em;
+  }
+  .Certificate img {
+    height: auto;
+    width: 100%;
+  }
+  .c-3 img {
+    width: 45%;
+    padding-left: 1.25em;
+  }
+  .Certificate .text h2 {
+    text-transform: uppercase;
+    font-size: smaller;
+    margin-bottom: 0.75em;
+  }
+  .Certificate .text p {
+    margin-bottom: 0.5em;
+    font-size: 0.75em;
+    line-height: 1.7;
+    color: #868e96;
+  }
+  .c-3 {
+    border-top: 1px solid #d6c08d;
+    grid-column: 1/3;
+    padding: 2em 0;
+  }
+  .c-2 {
+    grid: c-2;
+    border-left: 1px solid #d6c08d;
+
+    padding-left: 0.625em;
+  }
+  .c-1 {
+    grid: c-1;
+  }
+
+  /**************Dự án***************/
+
+  .container-2 {
+    display: grid;
+
+    margin: 0 0.75em;
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-areas: "p1 p2 p3";
+
+    gap: 1.75em;
+  }
+
+  .project {
+  }
+  .p1 {
+    grid: p1;
+  }
+  .p2 {
+    grid: p2;
+  }
+  .p3 {
+    grid: p3;
+  }
+  .project {
+    border: 1px solid #e9ecef;
+  }
+  .project img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #e9ecef;
+  }
+  .container-2 .project .title {
+    font-size: 1.875em;
+    text-transform: capitalize;
+    display: flex;
+    padding: 2em 0.75em;
+
+    font-size: 1.25em;
+    text-transform: uppercase;
+  }
+  .container-2 .project .section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-area: "time FUNiX" "  position";
+    padding: 1em 0.5em;
+    border-top: 1px solid #e9ecef;
+    gap: 1.125em;
+  }
+  .container-2 .project .describe {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 1em 0.5em;
+    border-top: 1px solid #e9ecef;
+    font-size: 0.75em;
+    line-height: 1.7;
+    color: #868e96;
+  }
+  .container-2 .project .section .time {
+    grid: "time";
+    background-color: #199cdb;
+    border-radius: 1em;
+    padding: 0.5em 0.75em;
+    color: #fff;
+    margin: 0 1em 0 0.75em;
+  }
+  .container-2 .project .section .FUNiX {
+    grid: "FUNiX";
+    display: flex;
+    flex-direction: row;
+
+    gap: 0.5em;
+  }
+  .container-2 .project .section .position {
+    grid: "position";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    grid-column: 2/3;
+  }
+  .container-2 .project .section i {
+    width: 1.5em;
+    height: 1.5em;
+  }
+  footer {
+    width: 100%;
+    height: 6.25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+    background-color: #dee2e6;
+    margin: 4em 0 2em 0;
+  }
+  footer p {
+    display: flex;
+    align-items: center;
+    gap: 0.25em;
+    font-size: 1.75em;
+  }
+  footer i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #199cdb;
+
+    border-radius: 50%;
+  }
+
+  footer a:link,
+  footer p a:visited {
+    text-decoration: none;
+    font-size: 0.75em;
+    line-height: 1.7;
+    color: #868e96;
+  }
+  footer p a:hover {
+    color: #212529;
+    text-decoration: none;
+  }
+}

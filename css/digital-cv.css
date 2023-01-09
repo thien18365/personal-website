@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container .item {
+  border-collapse: collapse;
+  background-color: #f1f3f5;
+}
+
+.container {
+  display: grid;
+  padding: 1em;
+  grid-template-columns: 2fr 1fr 1fr;
+  background-color: #1971c2;
+  gap: 1em;
+}
+.container h2 {
+  color: #1971c2;
+  font-size: 1.5em;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #ced4da;
+}
+.container.flex h3 {
+  font-size: 1em;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  padding-top: 0.25em;
+}
+.container p {
+  margin-bottom: 0.25em;
+  font-size: 0.8em;
+  line-height: 1.7;
+  color: #495057;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25em;
+  border-bottom: 1px solid #dee2e6;
+}
+.flex i {
+  font-size: 1.5em;
+}
+.goals {
+  grid: goals;
+}
+.item::after {
+  content: "";
+  padding: 1em;
+}
+
+.team {
+  grid: team;
+}
+.team .flex i {
+  font-size: 1.75em;
+}
+.team .flex {
+  justify-content: initial;
+  border-bottom: initial;
+}
+.timeline .flex i {
+  font-size: 1.75em;
+
+  color: #845ef7;
+}
+.timeline .flex {
+  justify-content: initial;
+  border-bottom: initial;
+  padding-top: 1.75em;
+  border-bottom: 1px dotted #228be6;
+}
+.scope {
+  grid: scope;
+}
+
+.scope .flex {
+  gap: 3em;
+  justify-content: initial;
+  border-bottom: initial;
+}
+.primary {
+  grid: primary;
+}
+.primary .flex {
+  gap: 3em;
+  justify-content: initial;
+  border-bottom: initial;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    display: grid;
+    padding: 1em;
+    grid-template-columns: 2fr 1fr 1fr;
+    background-color: #1971c2;
+    gap: 1em;
+  }
+
+  .timeline {
+    grid: timeline;
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
+}
+
+@media (max-width: 1023px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .flex i {
+    font-size: 1.5em;
+  }
+  .flex .text {
+    align-self: flex-start;
+  }
+}
